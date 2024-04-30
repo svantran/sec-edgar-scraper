@@ -35,6 +35,9 @@ def get_recent_filings():
     else:
         return jsonify({"error": "Missing query param: comany"}), 400
 
+    # if not filing_type:
+    #     filing_type == "All"
+    
     if not filing_type:
         filing_type = "All"
 
